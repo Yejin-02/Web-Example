@@ -1,0 +1,164 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <style>
+        #header, #content, #footer {
+            width: 1150px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #header > div, #footer > div {
+            height: 150px;
+            float: left;
+            border: 1px solid #d5d5d5;
+        }
+        #content > div {
+            height: 400px;
+            float: left;
+            border: 0.5px solid #d5d5d5;
+        }
+
+        .Left, .Right {
+            background-color: #e9e9e9;
+            width: 150px;
+        }
+        .center {
+            background-color: #e9e9e9;
+            width: 760px;
+        }
+
+        .nav {
+            overflow: hidden;
+        }
+        .nav a {
+            width: 120px; padding: 3px 8px; margin: 0 8px;
+            border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc;
+            font-weight: bold; font-size: 18px; text-align: center;
+            text-decoration: none; color: black; float: left; 
+            transition-duration: 0.3s;
+        }
+
+        .nav a:hover {
+            background: linear-gradient(to bottom, rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%);
+            color: #b60303;
+        }
+
+        #header .text, #footer .text {
+            clear: both;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        #footer .text {
+            line-height: 30px;
+        }
+
+        #content {
+            overflow: hidden;
+        }
+
+        #content .square {
+            margin: 20px 10px 0 0;
+            padding: 20px;
+            width: 130px; height: 130px;
+            background-color: #808080;
+            color: white;
+            font-size: 18px;
+            float: left;
+            opacity: 0.85;
+        }
+
+        #content .empty {
+            margin: 20px 0 0 0;
+            padding: 20px;
+            width: 140px;
+            height: 130px;
+            background-color: none;
+            float: left;
+        }
+
+        #content .square:hover {
+            background-color: #b60303;
+        }
+
+        #header .Left {border-radius: 30px 0;}
+        #header .center {border-radius: 0 0 30px 30px;}
+        #header .Right {border-radius: 0 30px;}
+        #content .Left {border-radius: 0 30px 30px 0;}
+        #content .center {
+            border-radius: 30px;
+            opacity: 0.9;
+            background-image: url(https://www.cctvnews.co.kr/news/photo/202107/228682_229760_1543.jpg);
+            background-size: 103%;
+        }
+        #content .Right {border-radius: 30px 0 0 30px;}
+        #footer .Left {border-radius: 0 30px;}
+        #footer .center {border-radius: 30px 30px 0 0;}
+        #footer .Right {border-radius: 30px 0;}
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="Left"></div>
+        <div class="center">
+            <div class="text">
+                <h1>G강신청</h1>
+            </div>
+            <div class="nav">
+                <a href="https://college.gist.ac.kr/college/" target="_blank">대학 홈페이지</a>
+                <a href="https://portal.gist.ac.kr/p/INT_MEN_STN/" target="_blank">GIST 포탈</a>
+                <a href="https://zeus.gist.ac.kr/sys/main/main.do" target="_blank">ZEUS</a>
+                <a href="https://gel.gist.ac.kr/?lang=ko" target="_blank">GEL</a>
+                <a href="https://www.gist.ac.kr/kr/main.html" target="_blank">GIST 홈페이지</a>
+            </div>
+        </div>
+        <div class="Right"></div>
+    </div>
+    <div id="content">
+        <div class="Left"></div>
+        <div class="center">
+            <a href="https://everytime.kr/timetable" target="_blank">
+                <div class="square" style="border-radius: 20px 0; margin-left: 20px">
+                    <p>이번 학기 </p>
+                    <p><strong>나의 시간표</strong></p>
+                </div>
+            </a>
+            <div class="square" style="border-radius: 20px 0">
+                <p>지난 학기</p>
+                <p><strong>성적 확인</strong></p>
+            </div>
+            <div class="square" style="border-radius: 20px 0">
+                <p>한 눈에 보는</p>
+                <p><strong>2022 학사 편람</strong></p>
+            </div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="square" style="border-radius: 20px 0; margin-left: 20px" ">
+                <p>나의 기초 필수 이수 내역</p>
+                <p><strong>18</strong>/22학점</p>
+            </div>
+            <div class="square" style="border-radius: 20px 0">
+                <p>나의 전공 이수 내역</p>
+                <p><strong>21</strong>/34학점</p>
+            </div>
+            <div class="square" style="border-radius: 20px 0">
+                <p>나의 부전공 이수 내역</p>
+                <p><strong></strong>부전공 미선택</p>
+            </div>
+        </div>
+        <div class="Right"></div>
+    </div>
+    <div id="footer">
+        <div class="Left"></div>
+        <div class="center">
+            <div class="text">
+                <p><strong>Team ATRITAS</strong></p>
+                <p>광주광역시 북구 첨단과기로123</p>
+                <p>Email: yangyj21@gm.gist.ac.kr</p>
+            </div>
+        </div>
+        <div class="Right"></div>
+    </div>
+</body>
+</html>
